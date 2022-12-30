@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apogee Management System</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1><center>Apogee Management System</center></h1>
+    </header>
+    <br/><br/>
+    <section class="container">
+      <form id="my-form">
+        <h1>Add Profile</h1>
+        <div class="msg"></div>
+        <div class="columns-copy columns" style="margin-top: 60px">
+            <div class="column-copy column">
+                <div>
+                    <label for="your name">Your Name  :</label>
+                    <input type="text" id="yourname">
+                  </div>
+              <br />
+
+            <div>
+              <label for="events name">Events Name:</label>
+              <input type="text" id="eventsname">
+            </div>
+            <br/>
+            <div>
+              <label for="department">Department :</label>
+              <select id="department">
+                <option>
+                    Frontend
+                </option>
+                <option>
+                    Backend
+                </option>
+                <option>
+                    UI/UX
+                </option>
+                <option>
+                    Design
+                </option>
+                <option>
+                    Video Editing
+                </option>
+              </select>
+            </div>
+            <br/>
+            <br/>
+            </div>
+            <div class="column-copy column">
+                
+                  <div>
+                      <label for="person name">Person in charge :</label>
+                      <input type="text" id="personsname">
+                    </div>
+                    <br/>
+                    <div>
+                      <label for="bitsid">BITS ID:</label>
+                      <input type="text" id="bitsid" pattern="20[0-9][0-9][A-Z][0-9][A-Z][A-Z][0-9][0-9][0-9][0-9]P">
+                    </div>
+                    <br/>
+                    <div>
+                      <label for="mobile">Mobile Number:</label>
+                      <input type="text" id="number" pattern="[0-9]{10}">
+                    </div>
+                    <br/>
+            </div>
+            <div class="column-copy column">
+                <div>
+                    <label for="date s">Event Start Date :</label>
+                    <input type="date" id="startdate">
+                  </div>
+                  <br/>
+                  <div>
+                    <label for="date e">Event End Date :</label>
+                    <input type="date" id="enddate">
+                  </div>
+                  <br/>
+                  <div>
+                    <label for="time s">Event Start Time :</label>
+                    <input type="time" id="starttime">
+                  </div>
+                  <br/>
+                  <div>
+                    <label for="time">Event End Time :</label>
+                    <input type="time" id="endtime">
+                  </div>
+                  <br/>
+            </div>
+          </div>
+          <button class="btn" type="submit" value="Submit">Submit</button>
+          <br/><br/>
+      </form>
+      <br/><br/>
+      <section class="container2">
+      <div><ul class="list"></ul></div></section>
+    </section>
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>
